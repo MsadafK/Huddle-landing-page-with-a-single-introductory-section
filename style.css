@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  /* overflow: hidden; */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  /* z-index: -1; */
+}
+
+nav {
+  padding: 2em;
+}
+
+.hero {
+  position: absolute;
+}
+
+.hero-content {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  /* border: 1px solid red; */
+  /* height: 100vh; */
+}
+
+.hero-content img {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.hero-content p {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  color: hsl(300, 31%, 79%);
+}
+
+.register-btn {
+  color: hsl(257, 40%, 49%);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 1em 3em;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.register-btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+footer {
+  text-align: right;
+  padding: 2em;
+}
+
+footer svg {
+  border: 2px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+}
+footer svg:hover {
+  border-color: hsl(300, 69%, 71%);
+}
+
+footer svg:hover path {
+  fill: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .hero-content img {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1em;
+  }
+  footer svg {
+    margin: 0.5em;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+  }
+  .register-btn {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    position: relative;
+  }
+}
+
+/* @media (max-width: 375px) {
+  background-image: url(./);
+} */
+@media (max-width: 375px) {
+  .background-image {
+    content: url("./images/bg-mobile.svg");
+  }
+}
